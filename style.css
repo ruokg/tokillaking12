@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&family=Playfair+Display:wght@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(242,242,242);
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 500%;
+    color:white;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 300%;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(5, auto); /* Columnas automáticas */
+    grid-template-rows: repeat(6, auto); /* Filas automáticas */
+    text-align: center;
+}
+
+.headerC {
+    grid-column: span 5;
+    background-color: rgb(27, 43, 64);
+}
+
+.buttonsC {
+    grid-column: span 5;
+    grid-row-start: 2;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto); /* Columnas automáticas */
+    grid-template-rows: auto; /* Fila automática */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+        .homeB {
+            grid-column: 2;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            color:#f2f2f2;
+            background-color: #bf5934;
+        }
+
+        .aboutB {
+            grid-column: 3;
+            border-right: 1px solid black;
+            color:#f2f2f2;
+            background-color: #bf5934;
+        }
+
+        .contactB {
+            grid-column: 4;
+            border-right: 1px solid black;
+            color:#f2f2f2;
+            background-color: #bf5934;
+        }
+
+.myEntryC {
+    grid-column: span 5;
+    grid-row-start: 3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
+    border-bottom: 1px solid black;
+}
+
+        .myEntryHead {
+            grid-column-start: 2;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-top: 1px solid black;
+            margin-top: 40px;
+        }
+
+        .myEntryPic {
+            width: auto;
+            grid-column: span 3 / span 3;
+            grid-column-start: 2;
+            grid-row-start: 2;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            
+        }
+
+        .myEntryText {
+            width: auto;
+            grid-column: span 3 / span 3;
+            grid-column-start: 2;
+            grid-row-start: 3;
+            margin-bottom: 40px;
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+.aboutC {
+    grid-column: span 5;
+    grid-row-start: 4;
+    border-bottom: 1px solid black;
+}
+
+        .aboutTitle {
+            grid-column-start: 3;
+            margin-bottom: 40px;
+            margin-left: 100px;
+            margin-right: 120px;
+        }
+
+.footer {
+    grid-column: span 5;
+    grid-row-start: 6;
+}
+
+.reseñaT{
+margin-top: 30px;
+margin-left: 120px;
+margin-right: 120px;
+border: 1px solid black;
+}
+
+.reseñaC{
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+    border: 1px solid black;
+}
